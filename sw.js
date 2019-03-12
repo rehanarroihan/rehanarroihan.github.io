@@ -32,8 +32,8 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-  'https://api.football-data.org/',
-  workbox.strategies.StaleWhileRevalidate({
+  new RegExp('https://api.football-data.org/'),
+  workbox.strategies.staleWhileRevalidate({
     cacheName: 'api',
   })
 );

@@ -2,7 +2,6 @@ var base_url = "https://api.football-data.org/";
 
 function status(response) {
     if (response.status !== 200) {
-        console.log("Error : " + response.status);
         return Promise.reject(new Error(response.statusText));
     } else {
         return Promise.resolve(response);
@@ -235,7 +234,6 @@ function getClubById() {
 
 function setOrRemoveFav(club_id) {
     getFavById(club_id).then(function(res) {
-        console.log(res);
         var action = "";
         if(res == undefined) {
             action = '<a onclick="saveToFav()" href="javascript:void(0)"><i class="fa fa-star"></i> Add to Favorite</a>';
