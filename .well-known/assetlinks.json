@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.emados",
+    "sha256_cert_fingerprints":
+  ["C6:F4:5C:88:06:35:1C:7B:29:F5:D6:A1:AD:A5:C7:C3:6D:5D:6C:FB:38:B9:D9:90:AF:54:39:BB:BC:71:C0:F8"]
+  }
+}]
